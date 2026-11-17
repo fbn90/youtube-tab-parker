@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*youtube\\.com/(watch([/?#].*)?|playlist([/?#].*)?|(shorts|live|embed|v)(/.*)?)$",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { "regexFilter": "^https?://youtu\\.be/[^?#]+.*$", "resourceTypes": ["main_frame"] }
+  }
+]

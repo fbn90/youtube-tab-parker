@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tab Parker · Settings</title>
+  <link rel="icon" href="icons/32.png?v=20261110" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body class="popup-page">
+  <main class="popup-content">
+    <header class="brand"><img src="icons/32.png" width="28" height="28" alt=""><span>Tab Parker<span class="brand-muted"> / YouTube</span></span></header>
+    <div class="protection" id="protection" role="status"><span class="dot"></span><span id="protection-label">Checking protection …</span></div>
+    <p id="title-sources" class="message" role="status"></p>
+    <h1>Collect tabs.<br>Watch later.</h1>
+    <p class="popup-intro">New video tabs park locally.<br>You choose when YouTube loads.</p>
+    <fieldset id="mode" disabled>
+      <legend>WHEN SHOULD THE VIDEO LOAD?</legend>
+      <label class="mode-option"><input type="radio" name="load-mode" value="select"><span><strong>When I select the tab</strong><small>Background tabs stay parked.</small></span></label>
+      <label class="mode-option"><input type="radio" name="load-mode" value="click"><span><strong>Only when I click “Load video”</strong><small>Selecting the tab leaves the video parked.</small></span></label>
+    </fieldset>
+    <label class="mode-option thumbnail-option"><input id="show-thumbnails" type="checkbox" disabled><span><strong>Show thumbnails</strong><small>In click-to-load mode, visible parked tabs request thumbnails from YouTube. Google receives the video ID and your IP address.</small></span></label>
+    <p id="saved" class="message" role="status" aria-live="polite"></p>
+    <aside class="hint"><strong>Park a link</strong><p>Right-click a YouTube link and choose “Park YouTube link” to open a local placeholder.</p></aside>
+    <p class="fine-print">Already loaded videos keep playing. Settings stay on this device. No analytics. <span id="version"></span></p>
+  </main>
+</body>
+</html>
