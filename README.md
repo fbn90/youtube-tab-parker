@@ -16,7 +16,9 @@ Keep newly opened YouTube videos parked on a lightweight local page until you ch
 2. Open `chrome://extensions` and enable **Developer mode**.
 3. Choose **Load unpacked** and select the extracted folder containing `manifest.json`. Pin the extension if you want its popup in the toolbar.
 
-For an update, keep the same local extension directory so Chrome retains the extension ID and its local settings. Before reloading Parker with parked tabs open, use Tab Atelier’s **Update Tab Parker safely** workflow to hold and restore them.
+The manifest contains the Chrome Web Store public key, so every installation, unpacked or from the store, uses the same extension ID (`bhnabphdcdknjeebnmeikbdcncnfhdpf`). Before reloading Parker with parked tabs open, use Tab Atelier’s **Update Tab Parker safely** workflow to hold and restore them.
+
+**Upgrading from a version without the key:** the extension ID changes once, and Chrome closes the parked tabs of the old installation and drops its settings. First hold the parked tabs in Tab Atelier, then remove the old Parker, load the new version, and restore the tabs. Tab Atelier moves them to the new ID automatically. Without Tab Atelier, save the parked links first.
 
 ## Screenshot
 

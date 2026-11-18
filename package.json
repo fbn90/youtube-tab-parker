@@ -1,6 +1,6 @@
 {
   "name": "youtube-tab-parker",
-  "version": "1.3.10",
+  "version": "1.3.11",
   "private": true,
   "type": "module",
   "description": "A local-first, Manifest V3 YouTube tab parking extension.",
